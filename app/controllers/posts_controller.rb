@@ -26,7 +26,7 @@ class PostsController < ApplicationController
     redirect_to post_path(@post)
   end
 
-  def body 
+  def body
     post = Post.find(params[:id])
     render plain: post.description
   end
